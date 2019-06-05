@@ -32,23 +32,26 @@ $(function () {
 	}
 
 	function clickBinding() {
-		toggle.click(function () {
-			menu.fadeIn(200);
-			close.fadeIn(400);
-			toggle.fadeOut(200);
-		});
+		isLargeWindow = $(window).width() < winSize;
+		if (isLargeWindow) {
+			toggle.click(function () {
+				menu.fadeIn(200);
+				close.fadeIn(400);
+				toggle.fadeOut(200);
+			});
 
-		menu.click(function () {
-			menu.fadeOut(200);
-			close.fadeOut(200);
-			toggle.fadeIn(200);
-		});
+			menu.click(function () {
+				menu.fadeOut(200);
+				close.fadeOut(200);
+				toggle.fadeIn(200);
+			});
 
-		close.click(function () {
-			menu.fadeOut(200);
-			close.fadeOut(200);
-			toggle.fadeIn(200);
-		});
+			close.click(function () {
+				menu.fadeOut(200);
+				close.fadeOut(200);
+				toggle.fadeIn(200);
+			});
+		}
 	}
 
 });
