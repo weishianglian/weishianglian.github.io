@@ -32,8 +32,16 @@ $(function () {
 	}
 
 	function clickBinding() {
-		isLargeWindow = $(window).width() < winSize;
+		isLargeWindow = $(window).width() > winSize;
 		if (isLargeWindow) {
+			
+			menu.click(function () {
+				menu.show(200);
+				
+			});
+
+			
+		}else {
 			toggle.click(function () {
 				menu.fadeIn(200);
 				close.fadeIn(400);
