@@ -63,6 +63,7 @@ button.slick-next{z-index: 2; right: -8%; left: initial; background: url('../ima
 .project_about h2{ margin-bottom: 10px; font-weight: bold; }
 .project_about p{ margin-bottom: 10px; }
 .gridder-padding{ width: 80%; min-width: 800px; }
+.gridder-show {background-color: #f8f9fa}
 
 
 main.about_wrap{ margin-top: 10px;   }
